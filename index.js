@@ -34,12 +34,14 @@ const server = async () => {
         console.log(error);
     }
 }; 
+
+server();
+
 app.get ('/', ( req,res) =>{
   res.status(200).json({ success: true, message: 'Web is live'})
   
   
       }) ;  
-server();
 
 
 // const app =express();
