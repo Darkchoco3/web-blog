@@ -37,11 +37,11 @@ const server = async () => {
 
 server();
 
-app.get ('/', ( req,res) =>{
-  res.status(200).json({ success: true, message: 'Web is live'})
+// app.get ('/', ( req,res) =>{
+//   res.status(200).json({ success: true, message: 'Web is live'})
   
   
-      }) ;  
+//       }) ;  
 
 
 // const app =express();
