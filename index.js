@@ -27,11 +27,6 @@ app.use(error)
 const server = async () => {
     try {
         await mongoose.connect(process.env.MONGODB_URL)
-    app.get ('/', ( req,res) =>{
-res.status(200).json({ success: true, message: 'Web is live'})
-
-
-    }) ;  
   app.listen(PORT, () => {
     console.log(`server running on port ${PORT}..`);
   })
@@ -39,6 +34,11 @@ res.status(200).json({ success: true, message: 'Web is live'})
         console.log(error);
     }
 }; 
+app.get ('/', ( req,res) =>{
+  res.status(200).json({ success: true, message: 'Web is live'})
+  
+  
+      }) ;  
 server();
 
 
